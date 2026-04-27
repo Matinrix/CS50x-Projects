@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Course-CS50x%20Harvard-6f42c1?style=for-the-badge&logo=harvard&logoColor=white" />
+  <img src="https://img.shields.io/badge/Course-CS50x%20-6f42c1?style=for-the-badge&logo=harvard&logoColor=white" />
   <img src="https://img.shields.io/badge/Topic-Scratch%20Game-6f42c1?style=for-the-badge&logo=scratch&logoColor=white" />
   <img src="https://img.shields.io/badge/Type-Project%20Link%20&%20Showcase-6f42c1?style=for-the-badge&logo=&logoColor=white" />
 </p>
