@@ -10,5 +10,10 @@ int main(void){
     } 
       // and i did it because we need a number from 1 to 8
       while (scale < 1 || scale > 8);
-      // now we need to write a code which makes the grid we want (IDK how to do this rn so lets write it later)
+      // now we need to write a code which makes the grid we want (IDK how to do this rn but i can write a function and write my codes into it later)
+     void Print_Mario(int scl)
+        {
+            //we want to write our codes here
+        
+        }
 }
