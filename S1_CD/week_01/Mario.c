@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+int scale;
+ void Print_Mario(int scl);
 int main(void)
 {
 
@@ -11,9 +12,18 @@ int main(void)
     } 
       // and i did it because we need a number from 1 to 8
       while (scale < 1 || scale > 8);
-      // now we need to write a code which makes the grid we want (IDK how to do this rn but i can write a function and write my codes into it later)
+     //Lets prinf the results
+    Print_Mario(scale);
 }
  void Print_Mario(int scl)
         {
-            //we want to write our codes here
+            //these two for loops are making our blocks
+            for (int i = 1; i < scl; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                printf("# ");
+            }
+            printf("\n");
+        }
         }
