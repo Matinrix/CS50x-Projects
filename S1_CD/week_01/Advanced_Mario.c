@@ -32,7 +32,7 @@ int main()
     }
     else if (blocksLook == 3)
     {
-        block = "H";
+        block = "#";
     }
     else
     {
