@@ -21,11 +21,22 @@ int main(int argc, char **argv)
     int key = atoi(argv[1]);
     char *text = get_string("plaintext:  ");
     int tlen = strlen(text);
+    printf("ciphertext: ");
     for (int j = 0; j < tlen; j++)
     {
         char ci = text[j];
-        
+        if ((ci >= 'a' && ci <= 'z') || (ci <= 'Z' && ci >= 'A'))
+        {
+            ci = ci + (key % 26);
+            if (!(isalpha(ci)))
+            {
+                ci = ci - 26;
+            }
+        }
+        printf("%c", ci);
     }
+    printf("\n");
+    return 0;
 }
 
 char *get_string(char *txt)
