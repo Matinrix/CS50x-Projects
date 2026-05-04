@@ -2,7 +2,6 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
-char *get_string(char *txt);
 int main(int argc, char **argv)
 {
     if (argc != 2)
@@ -13,7 +12,7 @@ int main(int argc, char **argv)
     int x = strlen(argv[1]);
     for (int i = 0; i < x; i++)
     {
-        if (isalpha(argv[1][i]))
+        if (!isdigit(argv[1][i]))
         {
             printf("Usage: ./ceasar key \n");
             return 1;
@@ -22,13 +21,13 @@ int main(int argc, char **argv)
     int key = atoi(argv[1]);
     char text[1024];
     printf("plaintext:  ");
-    scanf("%s", text);
+    fgets(text, sizeof(text), stdin);
     int tlen = strlen(text);
     printf("ciphertext: ");
     for (int j = 0; j < tlen; j++)
     {
         char ci = text[j];
-        if ((ci >= 'a' && ci <= 'z') || (ci <= 'Z' && ci >= 'A'))
+        if (isalpha(ci))
         {
             ci = ci + (key % 26);
             if (!(isalpha(ci)))
