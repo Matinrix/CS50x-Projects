@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 char *get_string(char *txt);
 int main(int argc, char **argv)
 {
@@ -19,7 +20,9 @@ int main(int argc, char **argv)
         }
     }
     int key = atoi(argv[1]);
-    char *text = get_string("plaintext:  ");
+    char text[1024];
+    printf("plaintext:  ");
+    scanf("%s", text);
     int tlen = strlen(text);
     printf("ciphertext: ");
     for (int j = 0; j < tlen; j++)
@@ -32,17 +35,14 @@ int main(int argc, char **argv)
             {
                 ci = ci - 26;
             }
+            printf("%c", ci);
         }
-        printf("%c", ci);
+        else
+        {
+            ci = text[j];
+            printf("%c", ci);
+        }
     }
     printf("\n");
     return 0;
-}
-
-char *get_string(char *txt)
-{
-    char *string;
-    printf("%s", txt);
-    scanf("%s", string);
-    return string;
 }
