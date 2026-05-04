@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+char *get_string(char *txt);
 int main(int argc, char **argv)
 {
     if (argc != 2)
@@ -17,8 +18,20 @@ int main(int argc, char **argv)
             return 1;
         }
     }
+    int key = atoi(argv[1]);
+    char *text = get_string("plaintext:  ");
+    int tlen = strlen(text);
+    for (int j = 0; j < tlen; j++)
     {
-        printf("yay");
-        return 0;
+        char ci = text[j];
+        
     }
+}
+
+char *get_string(char *txt)
+{
+    char *string;
+    printf("%s", txt);
+    scanf("%s", string);
+    return string;
 }
