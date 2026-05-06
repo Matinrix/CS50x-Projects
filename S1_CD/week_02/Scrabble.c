@@ -10,5 +10,14 @@ char Letters[26] = {'A', 'B', 'C', 'D',
 'U', 'V', 'W', 'X', 'Y', 'Z'};
 int main(void)
 {
-
+// get input words from both players
+    char *word1[];
+    char *word2[];
+    printf("Player 1 ; ");
+    scanf("%s", &word1);
+    printf("Player 2; ");
+    scanf("%s", &word2);
+    // score botch words
+  // CODE 
+  
 }
