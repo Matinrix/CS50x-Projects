@@ -10,7 +10,7 @@ char Letters[26] = {'A', 'B', 'C', 'D',
 'U', 'V', 'W', 'X', 'Y', 'Z'};
 int main(void)
 {
-// get input words from both players
+    // get input words from both players
     char *word1[];
     char *word2[];
     printf("Player 1 ; ");
@@ -18,6 +18,55 @@ int main(void)
     printf("Player 2; ");
     scanf("%s", &word2);
     // score botch words
-  // CODE 
-  
+    int score1 = compute_score(word1);
+    int score2 = compute_score(word2);
+    // print the winner
+    if (score1 > score2)
+    {
+        printf("Player 1 wins!");
+    }
+    else if (score1 < score2)
+    {
+        printf("Player 2 wins!");
+    }
+    else
+    {
+        printf("Tie!");
+    }
+}
+int compute_score(char *word)
+{
+    // compute and return score for string
+    int chLen = GetLen(word);
+    int score = 0;
+    for (int i = 0; i < chLen; i++)
+    {
+        char cc = toUpper(word[i]);
+        for (int j = 0; j < 26; j++)
+        {
+            if (Letters[j] == cc)
+            {
+                score += POINTS[j];
+                break;
+            }
+        }
+    }
+    return score;
+}
+char toUpper(char *word)
+{
+    if (word >= 'a' && word <= 'z')
+    {
+        return word - 32;
+    }
+    return word;
+}
+int GetLen(char *word)
+{
+    int len = 0;
+    for (int i = 0; word[i] != '\0'; i++)
+    {
+        len++;
+    }
+    return len;
 }
