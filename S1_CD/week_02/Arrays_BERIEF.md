@@ -46,7 +46,7 @@ Each implements a concept from the lectures and labs.
 | `scrabble.c`      | **Scrabble Score 🅂**   | A two-player game where the score for each word is calculated based on Scrabble letter values. It declares winners based on the total score. _(Note: This version may have compilation errors as provided, like incorrect array declarations for `word1`/`word2` and potential issues in `toUpper`)._ |
 | `scrabble2.c`     | **Scrabble Plus 🔤**  | An improved version of the Scrabble scoring game. It aims to fix compilation errors from the original (`scrabble.c`), potentially refining functions like `getLen` and `toUpper` for more robust character processing and scoring. It continues the two-player word-scoring logic.                    |
 | `caesar.c`     | **Caesar Cipher🏛️🌿**  | Method in which each letter in the plaintext is replaced by a letter some fixed number of positions down or up the alphabet.                     |
-
+| `bulbs.c` | **Bulbs 💡** | Converts text into visual bulb patterns by representing each character in `binary` and displaying it with `on`/`off` bulbs. |
 
 ---
 
