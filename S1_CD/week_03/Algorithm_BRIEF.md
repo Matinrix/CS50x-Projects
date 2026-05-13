@@ -51,8 +51,8 @@ Here’s what this week is about 🔮
 
 | 🗂 File Name | 🎯 Title | 📝 Description |
 |---|---|---|
-| `algorithm_notes.md` | **Algorithms Notes 🧠** | Notes and summaries about what an algorithm is, why it matters, and common algorithm categories. |
-| `struct_practice.c` | **Struct Practice 🧷** | Example usage of `typedef struct` to store and work with structured data. |
+| `algorithm_BRIEF.md` | **Algorithms Notes 🧠** | Notes and summaries about what an algorithm is, why it matters, and common algorithm categories. |
+| `algorithm.c` | **Linear Search 🧷** | Example usage of `linear search`, it is a simple linear searching algorithm which searches into the number and tells you if the number is in data base or no. (i didnt coded it yet but im thinking about it) |
 | `bubble_sort.c` | **Bubble Sort 🫧** | A basic sorting implementation that repeatedly swaps adjacent elements until the list is sorted. |
 
 ---
