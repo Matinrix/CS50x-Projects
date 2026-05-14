@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <string.h>
-
+int Print_Names(void);
 typedef struct
 {
     char *name;
-    char *Speed;
-    char *climb;
-    char *turnt;
-    char *weight;
+    int Speed;
+    float climb;
+    float turnt;
+    float weight;
 } jetData;
+
 jetData jet[5];
+
 int main(void)
 {
     jet[0].name = "F-15E";
@@ -37,4 +39,17 @@ int main(void)
     jet[4].climb = 305;
     jet[4].turnt = 19.5;
     jet[4].weight = 9.08;
+    Print_Names();
+    return 0;
+}
+int Print_Names(void)
+{
+    for (int i = 0; i < 5; i++)
+    {
+        printf("\n🛦 %s :\n", jet[i].name);
+        printf("    Speed: %d km/h\n", jet[i].Speed);
+        printf("    Climb: %.2f m/s\n", jet[i].climb);
+        printf("    Turn Time: %.2f seconds\n", jet[i].turnt);
+        printf("    Weight: %.2f tons\n", jet[i].weight);
+    }
 }
